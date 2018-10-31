@@ -7,7 +7,9 @@ results_dir = os.path.join(script_dir, 'Results/')
 
 if not os.path.isdir(results_dir):
     os.makedirs(results_dir)
-
+    
+# this is just for testing.
 plt.plot([1,2,3,4])
 plt.ylabel('some numbers')
+
 plt.savefig(results_dir + 'plot_name.eps', dpi=300)
